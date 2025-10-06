@@ -1,0 +1,27 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AvaloniaApplication1.MainWindow"
+        Title="Rock Paper Scissors Spock Lizard"
+        Width="400" Height="300">
+
+    <StackPanel Margin="20">
+        <TextBlock x:Name="InfoText" Text="Vælg en form" 
+                   HorizontalAlignment="Center" 
+                   Margin="0,0,0,10"/>
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Rock" Click="OnChoiceClick" Margin="3"/>
+            <Button Content="Paper" Click="OnChoiceClick" Margin="3"/>
+            <Button Content="Scissors" Click="OnChoiceClick" Margin="3"/>
+            <Button Content="Spock" Click="OnChoiceClick" Margin="3"/>
+            <Button Content="Lizard" Click="OnChoiceClick" Margin="3"/>
+        </StackPanel>
+
+        <TextBlock x:Name="ScoreText" Text="Spiller: 0 - Computer: 0"
+                   HorizontalAlignment="Center"
+                   Margin="0,15,0,10"/>
+        
+        <Button Content="Nulstil" Click="OnResetClick" 
+                HorizontalAlignment="Center"/>
+    </StackPanel>
+</Window>
